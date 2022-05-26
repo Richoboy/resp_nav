@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+
+
+    .logo{
+        padding-left: 2rem;
+    }
+    
+    ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 30rem;
+        padding-right: 2rem;
+        list-style: none;
+       @media screen and (max-width: 390px) {
+           display: none;
+       }
+       
+        
+        
+        a{
+            text-decoration: none;
+        }
+
+        
+    }
+
+    .icon {
+        position: absolute;
+        top: 0px;
+        right: 0.5rem;
+        display: none;
+        @media screen and (max-width: 390px) {
+            display: inline-block;
+        }
+    }
+
+    
+}
